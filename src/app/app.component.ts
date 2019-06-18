@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StockApiService } from '../stock-api.service'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'stock-search-front';
+  res: any
+  data: any
+  
+  
+  
 }
