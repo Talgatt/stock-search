@@ -8,14 +8,23 @@ import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 
+
+import { JsonpModule } from '@angular/http'
+import { HttpModule } from '@angular/http'
 import { HttpClientModule } from '@angular/common/http';
-import { ChartComponent } from './chart/chart.component'
+import { ChartComponent } from './chart/chart.component';
+import { MovieFinderComponent } from './movie-finder/movie-finder.component';
+import { MovieCardComponent } from './movie-card/movie-card.component';
+import { PopularSeriesComponent } from './popular-series/popular-series.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ChartComponent
+    ChartComponent,
+    MovieFinderComponent,
+    MovieCardComponent,
+    PopularSeriesComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,7 +32,9 @@ import { ChartComponent } from './chart/chart.component'
     ClarityModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    HttpModule,
+    JsonpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

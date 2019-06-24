@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { StockApiService } from '../stock-api.service'
+import { MovieFinderComponent } from './movie-finder/movie-finder.component'
+import { MovieApiService } from './movie-api.service'
 
 @Component({
   selector: 'app-root',
