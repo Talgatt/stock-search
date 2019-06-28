@@ -1,0 +1,8 @@
+
+<div *ngFor = 'let movie of upcoming; let i = index;'>
+    <img src = "https://image.tmdb.org/t/p/w200{{upcoming.poster_path}}" *ngIf = 'upcoming.poster_path'>
+    <img src = "assets/no-image.png" *ngIf = '!upcoming.poster_path'>
+    
+</div>
+
+<router-outlet></router-outlet>

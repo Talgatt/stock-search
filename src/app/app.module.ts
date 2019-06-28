@@ -15,7 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ChartComponent } from './chart/chart.component';
 import { MovieFinderComponent } from './movie-finder/movie-finder.component';
 import { MovieCardComponent } from './movie-card/movie-card.component';
-import { PopularSeriesComponent } from './popular-series/popular-series.component'
+import { PopularSeriesComponent } from './popular-series/popular-series.component';
+import { UpcomingComponent } from './upcoming/upcoming.component'
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { PopularSeriesComponent } from './popular-series/popular-series.componen
     MovieFinderComponent,
     MovieCardComponent,
     PopularSeriesComponent,
+    UpcomingComponent,
   ],
   imports: [
     BrowserModule,

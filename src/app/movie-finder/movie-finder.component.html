@@ -1,5 +1,5 @@
 <div class="jumbotron">
-  <p>Search for a movie using the form below</p>
+  <p>Search for a movie</p>
   <form>
     <div class="form-group">
       <div class="input-group">
@@ -50,7 +50,7 @@
   <div class="col-sm-6 col-md-4 col-lg-3 col-xs-6" *ngFor="let movie of topRated; let i = index;">
    {{movie.title}}
    
-   <img src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}" *ngIf="movie.poster_path">
+   <img src="https://image.tmdb.org/t/p/w200/{{movie.poster_path}}" *ngIf="movie.poster_path">
    <img src="assets/img/abstract-image.jpg" *ngIf="!movie.poster_path">
    
   </div>
@@ -61,7 +61,7 @@
   <div class="col-sm-3" *ngFor="let movie of popular; let i = index;">
     {{movie.title}}
    
-   <img src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}" *ngIf="movie.poster_path">
+   <img src="https://image.tmdb.org/t/p/w200/{{movie.poster_path}}" *ngIf="movie.poster_path">
    <img src="assets/img/abstract-image.jpg" *ngIf="!movie.poster_path">
    
   </div>

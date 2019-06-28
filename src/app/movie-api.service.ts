@@ -33,7 +33,7 @@ export class MovieApiService {
     })
   }
   
-  getPopular(){
+  getPopular(){ 
     var search = new URLSearchParams();
     search.set('sort_by', 'popularity.desc');
     search.set('api_key', this.apikey);
@@ -62,5 +62,10 @@ export class MovieApiService {
       })
   }
   
+  getUpcoming(){
+    var search = new URLSearchParams();
+    search.set('api_key', this.apikey)
+    return this._jsonp.get('https://api.themoviedb.org/3/movie/upcoming?callback=JSONP_CALLBACK',{search})
+  }
   
 }
