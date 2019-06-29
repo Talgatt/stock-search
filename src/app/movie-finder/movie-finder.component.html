@@ -3,7 +3,7 @@
   <form>
     <div class="form-group">
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search for movies..." [(ngModel)]="queryValue" name="queryValue" (keyup.enter)="searchMovies()">
+        <input type="text" class="form-control" placeholder="Search for movies..." [(ngModel)]="queryValue" name="queryValue" >
         <span class="input-group-btn">
           <button class="btn btn-primary" type="button" (click)="movieSearch()">Search</button>
         </span>
