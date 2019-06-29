@@ -21,7 +21,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/_redirect.ts"              
+              "src/_redirects"              
             ],
             "styles": [
               "node_modules/@clr/icons/clr-icons.min.css",
